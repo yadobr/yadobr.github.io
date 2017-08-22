@@ -1,0 +1,37 @@
+.lg-wrap{
+	display: inline-block;
+
+	-webkit-transition: width 5s;
+	-moz-transition: width 5s;
+	-ms-transition: width 5s;
+	-o-transition: width 5s;
+	transition: width 5s;
+}
+.lg-wrap > table{
+	border-collapse: collapse;
+}
+.lg-wrap > table th, .lg-wrap > table td{
+	position: relative;
+	box-sizing: border-box;
+}
+.lg-resizeHandle{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: calc(100% - 2.5px);
+	width: 5px;
+	height: 100%;
+	background-color: red;
+	cursor: col-resize;
+	z-index: 100;
+	opacity: 0;
+}
+
+.lg-noselect{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: col-resize;
+}

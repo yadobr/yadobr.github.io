@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>LiveGrid</title>
+	<meta charset="utf-8">
+ 	<link href="css/liveGrid.css" rel="stylesheet">
+
+ 	<script src="js/jquery.min.js"></script>
+	<script src="js/liveGrid.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#table1').liveGrid(
+			{
+				// Объект, наличие которого включает механизм сохранения колонок
+				saveColsSize:
+				{
+					uniqUserID: 'user1',
+					uniqTableID: '#table1'
+				},
+
+				// Callback вызывается, когда пользователь изменил ширину колонки
+				callback: function(data)
+				{
+					console.log(data.table); // Handle таблицы, ширину колонки которой изменили
+					console.log(data.index); // Порядковый номер столбца в таблице
+					console.log(data.width); // Новая ширина столбца
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="lg-wrap">
+	<table id="table1" border="1" height=200>
+		<tr>
+			<th>head1</th>
+			<th>head2</th>
+			<th>head3</th>
+			<th>head4</th>
+			<th>head5</th>
+			<th>head6</th>
+		</tr>
+		<tr>
+			<td>content1</td>
+			<td>content2</td>
+			<td>content3</td>
+			<td>content4</td>
+			<td>content5</td>
+			<td>content6</td>
+		</tr>
+		<tr>
+			<td>content1</td>
+			<td>content2</td>
+			<td>content3</td>
+			<td>content4</td>
+			<td>content5</td>
+			<td>content6</td>
+		</tr>
+	</table>
+</div>
+
+<p>
+	<button onclick="console.log(localStorage.removeItem('user1'))">Очистить localStorage</button>
+</p>
+
+<style>
+	button{
+		width: 147px;
+	}
+</style>
+
+<p>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 0)">Скрыть колонку 0</button>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 1)">Скрыть колонку 1</button>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 2)">Скрыть колонку 2</button>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 3)">Скрыть колонку 3</button>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 4)">Скрыть колонку 4</button>
+	<button onclick="$.liveGrid.hide('user1', '#table1', 5)">Скрыть колонку 5</button>
+</p>
+<p>
+	<button onclick="$.liveGrid.show('user1', '#table1', 0)">Показать колонку 0</button>
+	<button onclick="$.liveGrid.show('user1', '#table1', 1)">Показать колонку 1</button>
+	<button onclick="$.liveGrid.show('user1', '#table1', 2)">Показать колонку 2</button>
+	<button onclick="$.liveGrid.show('user1', '#table1', 3)">Показать колонку 3</button>
+	<button onclick="$.liveGrid.show('user1', '#table1', 4)">Показать колонку 4</button>
+	<button onclick="$.liveGrid.show('user1', '#table1', 5)">Показать колонку 5</button>
+</p>
+
+<br>
+<br>
+<br>
+
+<script>
+	$(document).ready(function()
+	{
+		$('#table2').liveGrid(
+		{
+			// Объект, наличие которого включает механизм сохранения колонок
+			saveColsSize:
+			{
+				uniqUserID: 'user1',
+				uniqTableID: '#table2'
+			},
+
+			// Callback вызывается, когда пользователь изменил ширину колонки
+			callback: function(data)
+			{
+				console.log(data.table); // Handle таблицы, ширину колонки которой изменили
+				console.log(data.index); // Порядковый номер столбца в таблице
+				console.log(data.width); // Новая ширина столбца
+			}
+		});
+
+		$('#table3').liveGrid(
+		{
+			// Объект, наличие которого включает механизм сохранения колонок
+			saveColsSize:
+			{
+				uniqUserID: 'user1',
+				uniqTableID: '#table3'
+			},
+
+			// Callback вызывается, когда пользователь изменил ширину колонки
+			callback: function(data)
+			{
+				console.log(data.table); // Handle таблицы, ширину колонки которой изменили
+				console.log(data.index); // Порядковый номер столбца в таблице
+				console.log(data.width); // Новая ширина столбца
+			}
+		});
+
+		$('#table4').liveGrid(
+		{
+			// Объект, наличие которого включает механизм сохранения колонок
+			saveColsSize:
+			{
+				uniqUserID: 'user1',
+				uniqTableID: '#table4'
+			},
+
+			// Callback вызывается, когда пользователь изменил ширину колонки
+			callback: function(data)
+			{
+				console.log(data.table); // Handle таблицы, ширину колонки которой изменили
+				console.log(data.index); // Порядковый номер столбца в таблице
+				console.log(data.width); // Новая ширина столбца
+			}
+		});
+	});
+</script>
+
+<div style="width: 800px; overflow-x: scroll; white-space: nowrap;">
+	<div class="lg-wrap">
+		<table id="table2" border="1" height=200>
+			<tr>
+				<th style="width: 100px">head1</th>
+				<th style="width: 100px">head2</th>
+				<th style="width: 100px">head3</th>
+				<th style="width: 100px">head4</th>
+				<th style="width: 100px">head5</th>
+				<th style="width: 100px">head6</th>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="lg-wrap">
+		<table id="table3" border="1" height=200>
+			<tr>
+				<th style="width: 100px">head1</th>
+				<th style="width: 100px">head2</th>
+				<th style="width: 100px">head3</th>
+				<th style="width: 100px">head4</th>
+				<th style="width: 100px">head5</th>
+				<th style="width: 100px">head6</th>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="lg-wrap">
+		<table id="table4" border="1" height=200>
+			<tr>
+				<th style="width: 100px">head1</th>
+				<th style="width: 100px">head2</th>
+				<th style="width: 100px">head3</th>
+				<th style="width: 100px">head4</th>
+				<th style="width: 100px">head5</th>
+				<th style="width: 100px">head6</th>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+			<tr>
+				<td>content1</td>
+				<td>content2</td>
+				<td>content3</td>
+				<td>content4</td>
+				<td>content5</td>
+				<td>content6</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
