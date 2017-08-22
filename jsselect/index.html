@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsselect</title>
+    <meta charset="utf-8">
+    <link href="css/jsselect.css" rel="styleSheet">
+    <link href="css/jsselect.theme.default.css" rel="styleSheet">
+  </head>
+  <body>
+    <select id="sel">
+      <option>One</option>
+      <option selected>Two</option>
+      <option>Three</option>
+    </select>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jsselect.js"></script>
+    <script>
+      $('#sel').jsselect({
+         debug: false,
+         oncreate: function(){ console.log('Create') },
+         onfocus: function(){ console.log('Focus') },
+         onopen: function(){ console.log('Open') },
+         onchange: function(){ console.log('Change') },
+         onblur: function(){ console.log('Blur') },
+         onclose: function(){ console.log('Close') }
+      });
+    </script>
+  </body>
+</html>
