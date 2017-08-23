@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jTree</title>
+    <meta charset="urf-8">
+    <link href="css/jTree.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jTree.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('#jTree').jTree({
+              data:
+              {
+                  text: 'Администрация',
+                  children: [
+                      {text: 'Бухгалтерия', children: [
+                          {text: 'Отдел 1', children: [{text: 'Отдел 1.1'}, {text: 'Отдел 1.2'}]},
+                          {text: 'Отдел 2'}
+                      ]},
+                      {text: 'Канцелярия'},
+                      {text: 'Склад'},
+                      {text: 'Рекламный отдел'},
+                      {text: 'Кейтеринг'},
+                      {text: 'Транспортный отдел'}
+                  ]
+              }
+          });
+
+           $('#jTree2').jTree();
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+        <h3>
+            Дерево построеное на основе JSON
+            <br>
+            JSON generated tree
+        </h3>
+    </p>
+    <div id="jTree"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <p>
+        <h3>
+            Дерево построеное на основе HTML
+            <br>
+            HTML generated tree
+        </h3>
+    </p>
+    <div id="jTree2">
+      <ul class="jTree-root">
+        <li class="jTree-trunk">Trunk
+          <ul>
+            <li class="jTree-leaf jTree-azure">Leaf 1
+              <ul>
+                <li class="jTree-leaf jTree-azure">Leaf 1a</li>
+                <li class="jTree-leaf jTree-blue">Leaf 1b
+                  <ul>
+                    <li class="jTree-leaf jTree-blue">Leaf 1aa
+                      <ul>
+                        <li class="jTree-leaf jTree-blue">Leaf 1aaa</li>
+                        <li class="jTree-leaf jTree-blue">Leaf 1aab</li>
+                      </ul>
+                    </li>
+                    <li class="jTree-leaf jTree-azure">Leaf 1ab</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="jTree-leaf jTree-azure">Leaf 2
+              <ul>
+                <li class="jTree-leaf jTree-azure">Leaf 2a</li>
+                <li class="jTree-leaf jTree-azure">Leaf 2b
+                  <ul>
+                    <li class="jTree-leaf jTree-azure">Leaf 2aa</li>
+                    <li class="jTree-leaf jTree-azure">Leaf 2ab</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li class="jTree-branch jTree-orange">Branch 1
+              <ul>
+                <li class="jTree-leaf jTree-azure">Leaf 1
+                  <ul>
+                    <li class="jTree-leaf jTree-azure">Leaf 1</li>
+                  </ul>
+                </li>
+                <li class="jTree-leaf jTree-azure">Leaf 2</li>
+              </ul>
+              <ul>
+                <li class="jTree-branch jTree-orange">Branch 1a
+                  <ul>
+                    <li class="jTree-branch">Branch 1aa</li>
+                    <li class="jTree-branch">Branch 1ab</li>
+                    <li class="jTree-branch">Branch 1ac</li>
+                  </ul>
+                </li>
+                <li class="jTree-branch">Branch 1b</li>
+                <li class="jTree-branch jTree-green">Branch 1c
+                  <ul>
+                    <li class="jTree-branch jTree-green">Branch 1ca</li>
+                    <li class="jTree-branch jTree-green">Branch 1cb</li>
+                    <li class="jTree-branch jTree-yellow">Branch 1cc
+                      <ul>
+                        <li class="jTree-branch jTree-yellow">Branch 1cca</li>
+                        <li class="jTree-branch jTree-yellow">Branch 1ccb</li>
+                        <li class="jTree-branch jTree-purple">1ccc
+                          <ul>
+                            <li class="jTree-branch jTree-purple">Branch 1cca</li>
+                            <li class="jTree-branch jTree-purple">Branch 1ccb</li>
+                            <li class="jTree-branch jTree-purple">Branch 1ccc</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="jTree-branch">Branch 2
+              <ul>
+                <li class="jTree-branch">2a</li>
+                <li class="jTree-branch">Branch 2b</li>
+                <li class="jTree-branch">Branch 2c</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
