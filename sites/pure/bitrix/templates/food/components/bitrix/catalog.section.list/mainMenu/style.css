@@ -1,0 +1,303 @@
+.backend-clouds{
+	width: 100%;
+	height: 201px;
+	margin-top: -201px;
+	background: transparent url(images/backend-clouds.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 0;  
+}
+.frontend-clouds{
+	width: 100%;
+	height: 201px;
+	margin-top: -201px;
+	background: transparent url(images/frontend-clouds.png) no-repeat;
+	background-size: 100%;
+	background-position: 0 0;  
+}
+.biker{
+	width: 100%;
+	height: 42px;
+	margin-top: -44px;	
+	background: transparent url(images/biker.png) no-repeat;
+	background-size: 52px 40px;
+	background-position: 1065px 0;
+	border-bottom: 1px solid #5F859D;
+}
+
+.catalog-sections {
+  width: 100%;
+  height: 0;
+  padding: 18% 0 0;
+  position: relative;  
+  margin-bottom: 0px;
+ 
+  background: transparent url("images/city-bg.png") no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+
+.milk-active{ background-position: 0 -198px; }
+.meat-active{ background-position: 0 -396px; }
+.bird-active{ background-position: 0 -594px; }
+.cooking-active{ background-position: 0 -792px; }
+.fruit-active{ background-position: 0 -990px; }
+.grocery-active{ background-position: 0 -1188px; }
+.sets-active{ background-position: 0 -1386px; }
+
+nav.catalog-sections.bg{
+
+}
+nav.catalog-sections.cs-light {
+    padding-top: 9.14%;
+    margin-top: -282px;
+
+}
+/**/.mainmenu {
+	z-index: 1;
+	position: relative;
+	background: #fff;
+	text-align: center !important;
+}
+
+nav.catalog-sections .links {
+    cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 7% 1% 0;
+}
+nav.catalog-sections.cs-light .links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0% 1% 0;
+}
+nav.catalog-sections .links:after {
+    /*border-bottom: 1px solid #6396b4;*/
+    content: "";
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+}
+nav.catalog-sections .links a {
+  display: inline-block;
+  height: 100%;
+  text-indent: -9999px;
+}
+
+nav.catalog-sections .links a.milk {width: 12%; margin-right: 1%;}
+
+nav.catalog-sections .links a.milk.active {}
+
+nav.catalog-sections .links a.meat { width: 12%; margin:0 1%; }
+nav.catalog-sections .links a.meat.active {}
+nav.catalog-sections .links a.fowl { width: 11%; margin:0 2% 0 3%;}
+nav.catalog-sections .links a.fowl.active {}
+nav.catalog-sections .links a.cookery { width: 12%;margin:0 1% 0 1%; }
+nav.catalog-sections .links a.cookery.active {}
+nav.catalog-sections .links a.fruit-vegetables { width: 14%;margin:0 1% 0 1%; }
+nav.catalog-sections .links a.fruit-vegetables.active {}
+nav.catalog-sections .links a.grocery { width: 9%;margin:0 1% 0 1%; }
+nav.catalog-sections .links a.grocery.active {}
+nav.catalog-sections .links a.sets { width: 11%; margin:0 0 0 2%; }
+nav.catalog-sections .links a.sets.active {}
+
+nav.catalog-sections.cs-light .links a.milk {width: 10%; margin: 0 1%;}
+nav.catalog-sections.cs-light .links a.meat {width: 7%; margin:0 5%; }
+nav.catalog-sections.cs-light .links a.fowl {width: 7.5%; margin: 0 2% 0 2%;}
+nav.catalog-sections.cs-light .links a.cookery { width: 11%;margin:0 1% 0 3%; }
+nav.catalog-sections.cs-light .links a.fruit-vegetables { width: 14%;margin:0 1% 0 1%; }
+nav.catalog-sections.cs-light .links a.grocery { width: 9%;margin:0 1% 0 2%; }
+nav.catalog-sections.cs-light .links a.sets { width: 8%; margin:0 0 0 5%; }
+
+
+/* CATALOG LIGHT */
+.catalog-light{	
+	max-width: 1164px;
+	width: 100%;
+	min-width: 968px;
+	height: 51px;
+	background: #f4f4f4;
+	padding: 13px 48px 0 49px;
+	display: none;	
+	z-index: 999;
+	top: 75px;
+	position: absolute;
+}
+.catalog-light a{
+	font-family: 'ProximaNova-Semibold', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 3px;
+}
+.catalog-light a:hover{
+	color: #5F859D;
+}
+
+.catalog-light a:active{
+	color: #5F859D;
+}
+.catalog-light-active{
+	color: #5F859D !important;	
+}
+/* SUBMENU */
+.middle-submenu{
+	max-width: 1164px;
+	width: 100% !important;
+	min-width: 968px;
+	height: 50px;
+	margin: 0 auto 30px auto;	
+	display: block;	
+}
+.middle-submenu a{ color: #211f20; }
+.middle-submenu a:hover{ color: #5F859D; }
+
+.middle-submenu-arrow{
+	width: 40px;
+	height: 10px;
+	margin-top: -10px;
+	background: url('images/middle-submenu-arrow.png');
+	display: none;	
+}
+.arrow-to-milk { margin-left: 54px; display: block;}
+.arrow-to-meat { margin-left: 213px; display: block;}
+.arrow-to-bird { margin-left: 374px; display: block;}
+.arrow-to-cooking { margin-left: 538px; display: block;}
+.arrow-to-fruit { margin-left: 697px; display: block;}
+.arrow-to-grocery { margin-left: 863px; display: block;}
+.arrow-to-sets { margin-left: 1025px; display: block;}
+
+.middle-submenu-milk, .middle-submenu-meat, .middle-submenu-bird, .middle-submenu-cooking, .middle-submenu-fruit, .middle-submenu-grocery, .middle-submenu-sets{
+	width: 1164px;
+	display: none;	
+	text-align: center;
+	padding-top: 25px;
+}
+.submenu-active{
+	display: block;
+}
+.middle-submenu-item{
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+.middle-submenu-item-clicked{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	margin-right: 20px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 2px;
+	border: 1px solid #5F859D;
+	border-radius: 14px;
+}
+.middle-submenu-item-clicked a{
+	color: #5F859D;
+}
+
+.middle-submenu-light{	
+	position: fixed;
+	top: 125px;
+	max-width: 1164px;
+	width: 100% !important;
+	min-width: 968px;
+	margin-left: -24px;
+	padding-right: 24px;
+	height: 51px;
+	background: #fdfdfd;
+	border-top: 0px;
+}
+.middle-submenu-light div{
+	padding-top: 7px !important;
+}
+.middle-submenu-light .middle-submenu-item-clicked{
+	padding-top: 2px !important;	
+}
+.middle-submenu-light .middle-submenu-arrow{
+	display: none !important;
+}
+
+.catalog .catalog_list .preview-image { background-size: contain; }
+.catalog .item:hover .preview-image { box-shadow: none; }
+.catalog .wrap-index { margin-bottom: 32px; }
+.catalog .item {
+	z-index: 2;
+	transition: all .1s ease;
+}
+.catalog .wrap-index:hover {z-index: 8;}
+.catalog .wrap-index:hover .item {
+	margin: -10px;
+	padding: 10px;
+	box-shadow: 0 -1px 9px rgba(0,0,0,.21);
+	border-radius: 12px;
+	background: white;
+}
+.catalog .wrap-index h4 a:hover { color: #5388a4; }
+.catalog .item .catalog-item-link {
+	color: #000000;
+	text-decoration: none;
+}
+.catalog .item h4 { font-size: 16px; font-weight: normal; margin-top: 0; }
+.catalog .item .price {font-size: 17px; font-family: 'ProximaNova-Semibold';}
+.catalog .item .price .currency { font-size: 13px; }
+
+.item-info-part {
+	background: url(images/pack-info_after.png) bottom center no-repeat;
+	font-size: 12px;
+	line-height: 14px;
+}
+.item-info-part .pack-info {
+	display: block;
+	background: url("images/pack-info_icon.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.carcass img {
+	margin: 0 auto;
+	display: block;
+	padding: 22px 0;
+}
+
+.item-info-part	.method {
+	background: url("images/d_method.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.item-info-part	.place {
+	background: url("images/d_place.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+.item-info-part	.cert {
+	background: url("images/d_certif.png") 32px center no-repeat;
+	padding: 22px 10px 22px 90px;
+}
+	.item-info-part	.cert a { color: #000; }
+.buy-block {
+	border: 1px dotted #cccccc;
+	padding-top: 38px;
+	margin-bottom: 54px;
+}	
+.buy-block .price {
+	font-family: 'ProximaNova-Semibold';
+	font-size: 30px;
+	margin-bottom: 22px;
+}
+.buy-block .to_cart { 
+	margin-bottom: -20px;
+	height: 50px;
+	padding: 14px 42px;
+}	
+
+.descr {
+	font-size: 14px;
+	margin-bottom: 16px;
+	padding-right: 16px;
+}
+	.descr span { font-weight: bold; }
+	.descr table { width: 66%; }
