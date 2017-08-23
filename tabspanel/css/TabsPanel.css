@@ -1,0 +1,58 @@
+/*
+# TABS PANEL
+# CREATED BY ROS.PRO
+# VERSION 0.1
+*/
+
+/* MARKING */
+.tabs-panel{
+	font-size: 12px;
+	font-family: Calibri;
+}
+.tabs-panel, .tab-title, .tab-content{
+	box-sizing: border-box;
+}
+
+.tabs-panel{
+	font-size: 0;
+}
+.tab-title{
+	#margin-bottom: -1px;
+	font-size: 14px;
+	width: auto;
+	display: inline-block;
+	padding: 15px 10px 15px 10px;
+}
+.tab-content{
+	font-size: 12px;
+	display: none;
+	padding: 10px 10px 10px 10px;
+}
+
+/* STYLE NORMAL */
+.tab-title{
+	cursor: pointer;
+	color: #666;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.tab-content{
+	border: 1px solid #DDD;
+	background-color: #EEE;
+}
+
+/* STYLE HOVER */
+.tab-title:hover{
+	color: #000;
+}
+
+/* STYLE ACTIVE */
+.tab-title-active{
+	color: #000;
+	border-bottom: 2px solid #3399FF;
+}
+.tab-content-active{
+	display: block;
+}

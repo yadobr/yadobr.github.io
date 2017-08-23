@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Word</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="JS/TabsPanel.min.js" async></script>
+	<link rel="stylesheet" type="text/css" href="CSS/TabsPanel.min.css"/>
+</head>
+<body>
+
+<!-- TABS PANEL -->
+<div class="tabs-panel">
+
+	<!-- TABS TITLES -->
+	<div class="tab-title tab-title-active">Документ</div>
+	<div class="tab-title">Шрифт и Текст</div>
+	<div class="tab-title">Изображения и Фигуры</div>
+	<div class="tab-title">Таблицы</div>
+
+	<!-- TABS CONTENT -->
+	<div class="tab-content tab-content-active">Документ</div>
+	<div class="tab-content">Шрифт и текст</div>
+	<div class="tab-content">Изображения и фигуры</div>
+	<div class="tab-content">Таблицы</div>
+</div>
+
+<script>
+window.onload = function()
+{
+	// CREATE A TABS PANEL
+	tabsPanel = new TabsPanel();
+}
+</script>
+
+</body>
+</html>
