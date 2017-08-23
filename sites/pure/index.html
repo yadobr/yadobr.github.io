@@ -3,14 +3,8 @@
 <title>Чистый край</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--[if lte IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="bitrix/js/main/core/css/core.css" type="text/css"  rel="stylesheet" />
-<!--
-<link href="http://fnt.webink.com/wfs/webink.css/?project=DA826768-D454-4650-AF75-1954262DE22A&fonts=3CE3758E-9A83-BA6E-300A-ACCFD5D3E584:f=ProximaNova-BoldIt,58A3DDEA-1A20-AFB9-54E7-882B2382F4AD:f=ProximaNova-SemiboldIt,FA4379E2-2038-8F3F-1CCD-9D7F6C1BE854:f=ProximaNova-ExtrabldIt,7ADDF267-02FA-4E7A-F098-EF6D9CFEF9AE:f=ProximaNova-Black,DD341213-BCCD-C52B-39B2-FF9E7464B6E5:f=ProximaNova-ThinIt,5A9479E7-B0E0-2DCD-5F27-F7666DF19C0F:f=ProximaNova-LightIt,D658C100-EB60-0878-7701-BA465DF17739:f=ProximaNovaT-Thin,38D80777-BBB8-AAF3-8C21-AAA9AD92B6E6:f=ProximaNova-BlackIt,382B4521-6228-4C38-41BC-3DE66C7C910A:f=ProximaNova-Bold,58DEFEBD-4A55-477B-3C13-525C6AEBDD7A:f=ProximaNova-Regular,C344819E-7F64-52D2-5903-DE54F5382845:f=ProximaNova-Semibold,D8F30418-0E92-EBB4-6408-D220574EF53E:f=ProximaNova-Extrabld,F5870F1F-48F5-36F5-550E-B276AA09225A:f=ProximaNova-RegularIt,C88A28DF-0112-63D9-25D2-A4EA08DAF75B:f=ProximaNova-Light" type="text/css"  rel="stylesheet" /> -->
+
 <link href="bitrix/templates/food/bootstrap/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
 <link href="bitrix/templates/food/js/fancybox/jquery.fancybox.css" type="text/css"  rel="stylesheet" />
 <link href="bitrix/js/socialservices/css/ss.css" type="text/css"  rel="stylesheet" />
@@ -19,22 +13,6 @@
 <link href="bitrix/templates/food/styles.css" type="text/css"  rel="stylesheet" />
 <link href="bitrix/templates/food/template_styles.css" type="text/css"  data-template-style="true"  rel="stylesheet" />
 <link href="bitrix/templates/food/liMarquee.css" type="text/css"  rel="stylesheet" />
-
-<script type="text/javascript">if(!window.BX)window.BX={message:function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;}};</script><script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','USER_ID':'','SERVER_TIME':'1400077285','SERVER_TZ_OFFSET':'14400','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'380c6ace091e93c4c15c959f84914ea4','SITE_ID':'s1'});(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
-
-<script type="text/javascript" src="bitrix/js/main/core/core.js"></script>
-<script type="text/javascript" src="bitrix/js/main/core/core_ajax.js"></script>
-<script type="text/javascript" src="bitrix/js/main/session.js"></script>
-<!--
-<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
-<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
-<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-sanitize.min.js"></script>
-<script type="text/javascript" src="http://code.angularjs.org/1.2.7/angular-animate.min.js"></script>
-<script type="text/javascript" src="bitrix/js/socialservices/ss.js"></script> -->
-
-<script type="text/javascript">
-//bxSession.Expand(1440, '380c6ace091e93c4c15c959f84914ea4', false, 'af3f3f5daaae6302c3d3568f95891c66');
-</script>
 
 <script type="text/javascript" src="bitrix/templates/food/js/respond.js"></script>
 <script type="text/javascript" src="bitrix/templates/food/js/jquery.js"></script>
@@ -55,7 +33,7 @@
 	$(document).ready(function(){
 		// Бегущая строка
 		// Устанавливаем ширину ссылкам, чтобы они выводились не сплошным текстом
-		$('.li-marquee a').each(function(i, t){			
+		$('.li-marquee a').each(function(i, t){
 			$(t).css('width', $(t).innerWidth() + 1164 +'px' );
 		});
 		$('.li-marquee').liMarquee({circular: false, drag: false});
@@ -70,12 +48,12 @@
 	<div id="transforming-logo"></div>
 
 	<!-- NAVBAR -->
-	<nav class="navbar navbar-fixed-top">		
+	<nav class="navbar navbar-fixed-top">
 		<div class="container mainmenu-container">
 			<div class="logo-place">
 				<a class="url" href="/"><img class="logo" src="bitrix/templates/food/images/logo.png" alt="Чистый край"></a>
 			</div>
-			<nav class="mainmenu">				
+			<nav class="mainmenu">
 				<a href="/benefits/">ПОЛЬЗAведение</a>
 				<a href="/recipes/">РЕЦЕПТОлогия</a>
 				<a href="/products/">ПРОДУКТОзнание</a>
@@ -108,7 +86,7 @@
 				<a href="javascript:showSubmenu(697, 'fruit', '80px')" class="fruit-vegetables">Овощи-фрукты</a>
 				<a href="javascript:showSubmenu(863, 'grocery', '80px')" class="grocery">Бакалея</a>
 				<a href="javascript:showSubmenu(1025, 'sets', '80px')" class="sets">Наборы</a>
-		    </div>				    
+		    </div>
 		    <div class="sun"></div>
 		    <div class="backend-clouds"></div>
 		    <div class="frontend-clouds"></div>
@@ -128,10 +106,10 @@
 				<div class="middle-submenu-cooking"></div>
 				<div class="middle-submenu-fruit"></div>
 				<div class="middle-submenu-grocery"></div>
-				<div class="middle-submenu-sets"></div>				
+				<div class="middle-submenu-sets"></div>
 			</div>
 		</nav>
-	    <script>	    	
+	    <script>
 	        var noScroll = false;
 	    </script>
 	</div>
@@ -140,7 +118,7 @@
 
 <!-- CONTENT -->
 <br>
-<section class="page_content container">	
+<section class="page_content container">
  	<div class="row">
 		<div class="col-sm-4">
 			<div class="spec-offer">
@@ -174,19 +152,19 @@
 	    	<a href="#">Вопросом как приготовить то, что будет и вкусно, и полезно съесть, люди задаются уже не одну тысячу лет. Мы раскроем эту тему с разных сторон — с исторической, культурной и утилитарной.</a>
 	    </div>
 	</div>
- 
-<div class="row"> 	 
-  <div class="col-sm-6"> 		<a class="s-block" href="/benefits/" > 			 
+
+<div class="row">
+  <div class="col-sm-6"> 		<a class="s-block" href="/benefits/" >
       <h3><big>Польза</big>ведение</h3>
-     			
+
       <div style="text-align: justify;"><a class="s-block" href="/benefits/" ><img class="s-icon pull-left" src="bitrix/templates/food/images/polza.png"  /></a></div>
     </a><a id="bxid_985645" class="s-block" href="http://pure-country.ru/benefits/">
       <p style="text-align: justify;"><strong>Эко-Рейтинг</strong> — система оценки экологической чистоты продуктов, разработанная российскими специалистами на основе имеющихся мировых Био, Эко, Органик стандартов с учётом сложности перехода к «идеальной модели».</p>
      </a> 		 	</div>
- 	 
-  <div class="col-sm-6"> 		<a class="s-block" href="/recipes/" > 			 
+
+  <div class="col-sm-6"> 		<a class="s-block" href="/recipes/" >
       <h3><big>Рецепт</big>ология</h3>
-     			<img class="s-icon pull-left" src="bitrix/templates/food/images/rezept.png"  /></a><a id="bxid_966996" class="s-block" href="http://pure-country.ru/recipes/"> 
+     			<img class="s-icon pull-left" src="bitrix/templates/food/images/rezept.png"  /></a><a id="bxid_966996" class="s-block" href="http://pure-country.ru/recipes/">
       <p style="text-align: justify;">Вопросом как приготовить то, что будет и вкусно, и полезно съесть, люди задаются уже не одну тысячу лет. Мы раскроем эту тему с разных сторон — с исторической, культурной и утилитарной. Возможно, это даст вам возможность увидеть привычные вещи в новом свете. Добро пожаловать в новую научную область — РЕЦЕПТОлогию!</p>
      </a> 		 	</div>
  </div>
@@ -213,11 +191,11 @@
 	</div>
 	<div class="col-xs-6 col-md-2">
     <nav class="social pull-right clearfix">
-    
+
         <a target="_blank" href="http://vk.com" class="vk"></a>
         <a target="_blank" href="http://facebook.com" class="fb"></a>
         <a target="_blank" href="http://twitter.com" class="tw"></a>
-        
+
     </nav>
 	</div>
 </div>
