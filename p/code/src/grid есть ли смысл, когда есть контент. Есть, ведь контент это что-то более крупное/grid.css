@@ -1,0 +1,38 @@
+/* GRID */
+.grid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.grid_vertical {
+    flex-direction: row;
+}
+
+
+/* GRID ITEM */
+.grid__item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.grid__item_grow {
+    flex-grow: 1;
+}
+
+.grid__item_vertical {
+    flex-direction: row;
+}
+
+.grid__item_right {
+    margin-left: auto !important;
+}
+
+.grid__item_bottom {
+    margin-top: auto !important;
+}

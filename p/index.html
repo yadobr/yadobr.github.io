@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>padme</title>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="code/img/leia.png">
+
+    <!-- Подсвека синтаксиса -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+    <!-- BLOCKS -->
+    <link rel="stylesheet" href="code/src/alert/alert.css">
+    <link rel="stylesheet" href="code/src/avatar/avatar.css">
+    <link rel="stylesheet" href="code/src/button/button.css">
+    <link rel="stylesheet" href="code/src/content/content.css">
+    <link rel="stylesheet" href="code/src/_dropdown/dist/css/dropdown.min.css">
+    <link rel="stylesheet" href="code/src/icon/icon.css">
+    <link rel="stylesheet" href="code/src/input/input.css">
+    <link rel="stylesheet" href="code/src/list/list.css">
+    <link rel="stylesheet" href="code/src/_overlay/dist/css/overlay.min.css">
+    <link rel="stylesheet" href="code/src/preloader/preloader.css">
+    <link rel="stylesheet" href="code/src/sidebar/sidebar.css">
+    <link rel="stylesheet" href="code/src/tabs/tabs.css">
+    <link rel="stylesheet" href="code/src/text/text.css">
+    <link rel="stylesheet" href="code/src/textarea/textarea.css">
+    <link rel="stylesheet" href="code/src/_up/dist/css/up.min.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <div class="layout__aside">
+            <div class="content">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Navigation</div>
+                </div>
+                <div class="content__section">
+                    <div class="list">
+                        <div class="list__item"><a class="text text_secondary text_link" href="#alert">Alert</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#avatar">Avatar</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#button">Button</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#content">Content</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#dropdown">Dropdown</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#elements">Elements</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#icon">Icon</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#input">Input</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#list">List</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#onbottom">Onbottom</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#overlay">Overlay</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#preloader">Preloader</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#sidebar">Sidebar</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#tabs">Tabs</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#text">Text</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#textarea">Textarea</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#up">Up</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout__main">
+
+            <!-- ALERT -->
+            <div class="content content_alert" id="alert">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Alert</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <div class="alert alert_primary">
+                            <div class="text">Primary. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <div class="alert alert_secondary">
+                            <div class="text">Secondary. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <div class="alert alert_success">
+                            <div class="text">Success. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <div class="alert alert_warning">
+                            <div class="text">Warning. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <div class="alert alert_error">
+                            <div class="text">Error. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AVATAR -->
+            <div class="content content_avatar" id="avatar">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Avatar</div>
+                </div>
+                <div class="content__section">
+                    <pre>
+                        <code class="html">
+    &lt;div class=&quot;avatar&quot; style=&quot;background-color: #46545c&quot;&gt;T&lt;/div&gt;
+    &lt;div class=&quot;avatar&quot; style=&quot;background-image: url(code/img/avatar.png)&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;avatar avatar_large&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;avatar avatar_medium&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;avatar avatar_small&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;avatar avatar_rounded&quot;&gt;&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <div class="avatar avatar_large" style="background-image: url(code/img/avatar.png)"></div>
+                        <div class="avatar" style="background-image: url(code/img/avatar.png)"></div>
+                        <div class="avatar avatar_small avatar_rounded" style="background-image: url(code/img/avatar.png)"></div>
+                    </div>
+                    <div class="content__row">
+                        <div class="avatar avatar_large" style="background-color: #46545c">T</div>
+                        <div class="avatar" style="background-color: #46545c">T</div>
+                        <div class="avatar avatar_small" style="background-color: #46545c">T</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="content content_button" id="button">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Button</div>
+                </div>
+                <div class="content__section">
+                    <pre>
+                        <code class="html">
+    &#x3C;div class=&#x22;button&#x22;&#x3E;Text&#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;button&#x22;&#x3E;
+        &#x3C;div class=&#x22;button__item&#x22;&#x3E;Text&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;button__item&#x22;&#x3E;Icon&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;!-- ROLE --&#x3E;
+    &#x3C;div class=&#x22;button button_primary&#x22;&#x3E;Text&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;button button_secondary&#x22;&#x3E;Text&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;button button_outline&#x22;&#x3E;Text&#x3C;/div&#x3E;
+
+    &#x3C;div class=&#x22;button button_rounded&#x22;&#x3E;Text&#x3C;/div&#x3E;
+
+
+    &#x3C;!-- SIZES --&#x3E;
+    &#x3C;div class=&#x22;button button_large&#x22;&#x3E;Text&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;button button_medium&#x22;&#x3E;Text&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;button button_small&#x22;&#x3E;Text&#x3C;/div&#x3E;
+
+
+    &#x3C;!-- STATE --&#x3E;
+    &#x3C;div class=&#x22;button button_loading&#x22;&#x3E;Text&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;button button_disabled&#x22;&#x3E;Text&#x3C;/div&#x3E;
+                        </code>
+                    </pre>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <div class="button">Button</div>
+                        <div class="button button_primary button_large">
+                            <div class="button__item">Button primary large</div>
+                        </div>
+                        <div class="button button_secondary button_loading">
+                            <div class="button__item">Button loading</div>
+                        </div>
+                        <div class="button button_outline button_small button_disabled">
+                            <div class="button__item">Button outline small disabled</div>
+                        </div>
+                        <div class="button button_outline button_small button_rounded">
+                            <div class="button__item">Button outline small rounded</div>
+                        </div>
+                    </div>
+                    <div class="content__row">
+                        <div class="button button_primary button_loading">
+                            <div class="button__item">Button primary loading</div>
+                        </div>
+                        <div class="button button_secondary button_loading">
+                            <div class="button__item">Button secondary loading</div>
+                        </div>
+                        <div class="button button_outline button_loading">
+                            <div class="button__item">Button outline loading</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="content content_content" id="content">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Content</div>
+                </div>
+                <div class="content__section">
+                    <pre>
+                        <code class="html">
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;div class=&quot;content__section&quot;&gt;
+                &lt;div class=&quot;content__row&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;content__row&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;content__section&quot;&gt;
+                &lt;div class=&quot;content__col&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;content__col&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <!-- DROPDOWN -->
+            <div class="content content_dropdown" id="dropdown">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Dropdown</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="html">
+        &lt;div class=&quot;dropdown&quot;&gt;
+            &lt;div class=&quot;dropdown__toggle&quot;&gt;Dropdown toggle&lt;/div&gt;
+            &lt;div class=&quot;dropdown__content&quot;&gt;
+                &lt;div class=&quot;text&quot;&gt;Dropdown content&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+        // Выполняется для все элементов с классом .dropdown
+        dropdown()
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="content__section">
+                    <div class="dropdown" data-dropdown-offset-y="10">
+                        <div class="dropdown__toggle button button_outline button_medium">
+                            <div class="button__item">Dropdown toggle</div>
+                        </div>
+                        <div class="dropdown__content">
+                            <div class="text">Dropdown content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ELEMENTS -->
+            <div class="content content_elements" id="elements">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Elements</div>
+                </div>
+                <div class="content__section">
+                    <pre>
+                        <code class="js">
+        // Базовый класс, от которого наследуются все блоки.
+        // Создает js-сущности всех элементов блока, доступные через: блок.__элемент
+        // При помощи методов receive и send позволяет обмениваться данными между блоками
+        class Elements
+        {
+            // Получает как аргумент конструктора элемент(Node), либо селектор элемента.
+            constructor( element ){}
+
+            // Содает экземпляр класса для всех блоков этого типа на странице
+            static awake(){}
+
+            // Регистрируем слоты и блоки, от которых они ждут сигнала
+            receive( params = {} ){}
+
+            // Транслируем сигнал
+            send( params = {} ){}
+        }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div class="content" id=form"">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Form</div>
+                </div>
+                <div class="content__section">
+                    <div class="text">Переделать</div>
+                </div>
+            </div>
+
+            <!-- ICON -->
+            <div class="content content_icon" id="icon">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Icon</div>
+                </div>
+                <div class="content__section">
+                    <svg class="icon icon_arrow"><use xlink:href="code/src/icon/icons.svg#arrow"></use></svg>
+                    <svg class="icon icon_bell"><use xlink:href="code/src/icon/icons.svg#bell"></use></svg>
+                    <svg class="icon icon_close"><use xlink:href="code/src/icon/icons.svg#close"></use></svg>
+                    <svg class="icon icon_comments"><use xlink:href="code/src/icon/icons.svg#comments"></use></svg>
+                    <svg class="icon icon_dots"><use xlink:href="code/src/icon/icons.svg#dots"></use></svg>
+                    <svg class="icon icon_loupe"><use xlink:href="code/src/icon/icons.svg#loupe"></use></svg>
+                    <svg class="icon icon_menu"><use xlink:href="code/src/icon/icons.svg#menu"></use></svg>
+                    <svg class="icon icon_plus"><use xlink:href="code/src/icon/icons.svg#plus"></use></svg>
+                    <svg class="icon icon_share"><use xlink:href="code/src/icon/icons.svg#share"></use></svg>
+                    <svg class="icon icon_fb"><use xlink:href="code/src/icon/icons.svg#fb"></use></svg>
+                    <!-- <svg class="icon icon_in"><use xlink:href="code/src/icon/icons.svg#in"></use></svg> -->
+                    <svg class="icon icon_tg"><use xlink:href="code/src/icon/icons.svg#tg"></use></svg>
+                    <svg class="icon icon_tw"><use xlink:href="code/src/icon/icons.svg#tw"></use></svg>
+                    <!-- <svg class="icon icon_vk"><use xlink:href="code/src/icon/icons.svg#vk"></use></svg> -->
+                </div>
+            </div>
+
+            <!-- INPUT -->
+            <div class="content content_input" id="input">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Input</div>
+                </div>
+                <div class="content__section">
+                    <div class="input input_editable" contenteditable="true">Div с текстом</div>
+                    <input class="input" value="Input с текстом">
+                    <input class="input" placeholder="Обычное состояние">
+                    <input class="input input_focused" placeholder="Фокус на инпуте">
+                    <input class="input input_required" placeholder="Обязательное поле">
+                    <input class="input input_right" placeholder="Правильно">
+                    <input class="input input_wrong" placeholder="Неправильно">
+                </div>
+            </div>
+
+            <!-- LIST -->
+            <div class="content content_list" id="list">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">List</div>
+                </div>
+                <div class="content__section"></div>
+                <div class="content__section" style="display: flex">
+                    <!-- STYLE ONLY FOR TEST -->
+                    <style>
+                        .layout__main .list {
+                            padding: 20px;
+                            border: 1px solid #eaeaea;
+                        }
+                    </style>
+                    <div class="list" style="width: 300px;">
+                        <div class="list__item list__item_single"><a class="text text_primary text_link" href="#">Лапшанга</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Интересные</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Новые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Обсуждаемые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Лучшие</a></div>
+                        <div class="list__item list__item_single"><a class="text text_secondary text_link" href="#">Выход</a></div>
+                    </div>
+                    <div class="list" style="width: 300px; margin-left: auto;">
+                        <div class="list__item">
+                            <a class="text text_secondary text_link" href="#">
+                                <div class="text text_primary">lonely_musician</div>
+                                <br>
+                                <div class="text text_secondary">Профиль</div>
+                            </a>
+                        </div>
+                        <div class="list__item list__item_separator"></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Интересные</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Новые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Обсуждаемые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Лучшие</a></div>
+                        <div class="list__item list__item_separator"></div>
+                        <div class="list__item list__item_single"><a class="text text_secondary text_link" href="#">Выход</a></div>
+                    </div>
+                </div>
+                <div class="content__section">
+                    <div class="list list_horizontal">
+                        <div class="list__item list__item_single"><a class="text text_primary text_link" href="#">Padme</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Интересные</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Новые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Обсуждаемые</a></div>
+                        <div class="list__item"><a class="text text_secondary text_link" href="#">Лучшие</a></div>
+                        <div class="list__item list__item_right">
+                            <div class="list list_horizontal" style="padding: 0; border:none">
+                                <div class="list__item list__item_single"><a class="text text_secondary text_link" href="#">Вход</a></div>
+                                <div class="list__item"><a class="text text_secondary text_link" href="#">Регистрация</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ONBOTTOM -->
+            <div class="content content_onbottom" id="onbottom">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Onbottom</div>
+                </div>
+                <div class="content__section">
+                    <pre>
+                        <code class="js">
+        // Функция вызывает callback, когда пользователь доскроллит до конца страницы.
+        // Try it. See result in console
+        onbottom( function(){ alert('Hello World!') } )
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            <!-- OVERLAY -->
+            <div class="content content_onbottom" id="overlay">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Overlay</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="html">
+            &lt;button id=&quot;toggle&quot;&gt;Show overlay&lt;/button&gt;
+            &lt;div class=&quot;overlay&quot; data-overlay-toggle=&quot;#toggle&quot;&gt;&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+            // Функция создает overlay для всех элементов с классом .overlay
+            overlay();
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <div class="button button_outline button_medium" id="toggle">
+                            <div class="button__item">Show overlay</div>
+                        </div>
+                        <div class="overlay" data-overlay-toggle="#toggle" data-overlay-close="#overlay-close">
+                            <div id="overlay-close" style="height: 100%; display: flex; align-items: center; justify-content: center">
+                                <img src="code/img/overlay.bmp" width="70%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRELOADER -->
+            <div class="content" id="preloader">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Preloader</div>
+                </div>
+                <div class="content__section">
+                    <div class="preloader preloader_active">
+                        <div class="preloader__item"></div>
+                        <div class="preloader__item"></div>
+                        <div class="preloader__item"></div>
+                        <div class="preloader__item"></div>
+                        <div class="preloader__item"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="content" id="sidebar">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Sidebar</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="html">
+        &lt;div class=&quot;button button_outline button_medium&quot; id=&quot;toggle-sidebar&quot;&gt;
+            &lt;div class=&quot;button__item&quot;&gt;Show sidebar&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;overlay&quot; data-overlay-toggle=&quot;#toggle-sidebar&quot;&gt;
+            &lt;div class=&quot;sidebar sidebar_left&quot;&gt;
+                &lt;div class=&quot;text&quot;&gt;Текст&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+        // Функция создает overlay для всех элементов с классом .overlay
+        // Overlay необходим для работы sidebar
+        overlay();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="content__section">
+                    <div class="button button_outline button_medium" id="toggle-sidebar">
+                        <div class="button__item">Show sidebar</div>
+                    </div>
+                    <div class="overlay" data-overlay-toggle="#toggle-sidebar">
+                        <div class="sidebar sidebar_left">
+                            <div class="text">Текст</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="content content_text" id="tabs">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Tabs</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="html">
+        &lt;div class=&quot;tabs&quot; id=&quot;tabs&quot;&gt;
+            &lt;div class=&quot;tabs__head&quot;&gt;
+                &lt;div class=&quot;tabs__tab&quot;&gt;
+                    &lt;div class=&quot;text text_link text_single&quot;&gt;Вкладка 1&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tabs__tab&quot;&gt;
+                    &lt;div class=&quot;text text_link text_single&quot;&gt;Вкладка 2&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tabs__body&quot; style=&quot;padding-top: 20px;&quot;&gt;
+                &lt;div class=&quot;tabs__content&quot;&gt;
+                    &lt;div class=&quot;text text_link text_single&quot;&gt;Контент 1&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;tabs__content&quot;&gt;
+                    &lt;div class=&quot;text text_link text_single&quot;&gt;Контент 2&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+        var tabs = new Tabs('#tabs');
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="content__section">
+                    <div class="tabs" id="tabs">
+                        <div class="tabs__head">
+                            <div class="tabs__tab">
+                                <div class="text text_link text_single">Вкладка 1</div>
+                            </div>
+                            <div class="tabs__tab">
+                                <div class="text text_link text_single">Вкладка 2</div>
+                            </div>
+                        </div>
+                        <div class="tabs__body" style="padding-top: 20px;">
+                            <div class="tabs__content">
+                                <div class="text text_link text_single">Контент 1</div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="text text_link text_single">Контент 2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEXT -->
+            <div class="content content_text" id="text">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Text</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <div class="text text_primary">Text primary</div>
+                        <div class="text">Text</div>
+                        <div class="text text_secondary">Text secondary</div>
+                    </div>
+                    <div class="content__row">
+                        <div class="text text_link">Link</div>
+                        <div class="text text_secondary text_link">Link secondary</div>
+                    </div>
+                    <div class="content__row" style="background-color: antiquewhite">
+                        <div class="text text_squeezed">Text squeezed</div>
+                        <br>
+                        <div class="text text_squeezed">Text squeezed</div>
+                    </div>
+                    <div class="content__row">
+                        <div class="text text_largest">Text largest</div>
+                        <div class="text text_large">Text large</div>
+                        <div class="text text_medium">Text medium</div>
+                        <div class="text">Text normal</div>
+                        <div class="text text_small">Text small</div>
+                    </div>
+                    <div class="content__row">
+                        <div class="text text_largest">Lineheight<br>Lineheight</div>
+                        <div class="text text_large">Lineheight<br>Lineheight</div>
+                        <div class="text text_medium">Lineheight<br>Lineheight</div>
+                        <div class="text">Lineheight<br>Lineheight</div>
+                        <div class="text text_small">Lineheight<br>Lineheight</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEXTAREA -->
+            <div class="content content_text" id="textarea">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Textarea</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="html">
+        &lt;textarea class=&quot;textarea&quot; placeholder=&quot;Введите текст&quot;&gt;&lt;/textarea&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+        autosize( document.querySelectorAll( '.textarea' ) );
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="content__section">
+                    <textarea class="textarea" placeholder="Введите текст"></textarea>
+                </div>
+            </div>
+
+            <!-- Up -->
+            <div class="content" id="up">
+                <div class="content__section">
+                    <div class="text text_primary text_medium text_squeezed">Up</div>
+                </div>
+                <div class="content__section">
+                    <div class="content__row">
+                        <pre>
+                            <code class="js">
+        // Создает элемент, который при нажатии возвращает наверх
+        // Функция может принимать параметр position: left или right. Определяет, с какой стороны отображать элемент
+        // Попробуйте
+        up();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0
+        }
+        div {
+            box-sizing: border-box;
+        }
+        pre{
+            line-height: 0;
+            font-size: 0;
+            box-sizing: border-box;
+        }
+        code{
+            width: 900px;
+            line-height: 18px;
+            font-size: 14px;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 1300px) { code{ width: 800px; } }
+        @media (max-width: 1200px) { code{ width: 700px; } }
+        @media (max-width: 1100px) { code{ width: 600px; } }
+        @media (max-width: 1000px) { code{ width: 500px; } }
+
+        .layout {
+            display: flex;
+        }
+
+        .layout__aside {
+            position: fixed;
+            flex-basis: 300px;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .layout__main {
+            flex-basis: 900px;
+            flex-shrink: 1;
+            min-height: 100vh;
+            margin-left: 300px;
+            padding: 30px;
+            border-left: 1px solid #eaeaea;
+            border-right: 1px solid #eaeaea;
+        }
+        .content + .content {
+            margin-top: 100px;
+        }
+        .content_avatar .avatar + .avatar {
+            margin-left: 10px;
+        }
+        .content_alert .alert + .alert {
+            margin-top: 20px;
+        }
+        .content_button .button + .button {
+            margin-left: 10px;
+        }
+        .content_content .content__section:nth-child(2) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .content_dropdown {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .content_elements .content__section:nth-child(2), .content_onbottom .content__section:nth-child(2) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .content_icon svg + svg {
+            margin-left: 10px;
+        }
+        .content_icon .content__section:nth-child(2) {
+            display: flex;
+            align-items: center;
+        }
+        .content_input .input + .input {
+            margin-top: 20px;
+        }
+        .content_text {
+            font-size: 14px;
+        }
+    </style>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="code/src/elements/elements.js"></script>
+    <script src="code/src/content/content.js"></script>
+    <script src="code/src/_dropdown/dist/js/dropdown.min.js"></script>
+    <!-- <script src="blocks/form/form.js"></script> -->
+    <script src="code/src/onbottom/onbottom.js"></script>
+    <script src="code/src/_overlay/dist/js/overlay.min.js"></script>
+    <script src="code/src/tabs/Tabs.js"></script>
+    <script src="code/src/textarea/autosize.min.js"></script>
+    <script src="code/src/_up/dist/js/up.min.js"></script>
+
+    <script>
+        dropdown();
+        onbottom( function(){ console.log('Onbottom works!') } );
+        overlay();
+        var tabs = new Tabs('#tabs');
+        autosize( document.querySelectorAll( '.textarea' ) );
+        up('right');
+    </script>
+</body>
+</html>

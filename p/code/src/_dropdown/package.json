@@ -1,0 +1,25 @@
+{
+  "name": "dropdown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-flatten": "^0.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^4.3.9",
+    "gulp.spritesmith": "^6.2.1"
+  },
+  "description": ""
+}

@@ -1,0 +1,35 @@
+.overlay
+    display none
+    position fixed
+    left 0
+    top 0
+    bottom 0
+    right 0
+    background-color rgba(0, 7, 10, 0.9)
+    overflow auto //  Нельзя делать overflow-y auto и overflow-x hidden. Т.к. на мобилках(и на десктопах с маленькой шириной экрана), нельзя будет прокручивать невлезающий по ширине контент
+    z-index 999
+    animation fade-in .5s
+    -webkit-overflow-scrolling: touch; //(не работает с контентом, который больше чем страница? Известный баг. Или все работает, я просто в прошлый раз когда это писал что-то перепутал? Щас проверил вроде все работает) Для плавного скролинга модального окна на ios устроствах
+
+.overlay_active
+    display block
+
+.overlay_noscroll
+    overflow hidden
+
+.overlay__noscroll
+    // position fixed // Если поставить это свойство, то на проскролленой странице, при появлении overlay скрол страницы сброситься и придется листать заново вниз
+    min-width 100vw
+    min-height 100vh
+    // margin 0 Нужен ли margin тут?
+    overflow hidden // Если не поставить это свойство, то скроллбара может быть два: у страницы и у оверлей. Что некрасиво
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,158 @@
+doctype html
+html
+    head
+        title Overlay
+        meta(charset="utf-8")
+        //- Обязательно:
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0")
+        link(href="css/overlay.min.css" rel="stylesheet")            
+        link(href="../../text/text.css" rel="stylesheet")            
+    //- body(style="touch-action: none; margin: 0px; background-image: url('img/background-for-scrollable-content.jpg')")
+    body        
+        .toggles
+            button#toggle1a Show overlay 1
+            button#toggle1b Show overlay 1
+            .overlay(data-overlay-toggle="#toggle1a, #toggle1b")
+                img(src="img/test.jpg" width="80%" style="display: block; margin: 0 auto; margin-top: 80px")
+            
+            button#toggle2 Show overlay with offsets
+            .overlay(data-overlay-toggle="#toggle2" data-overlay-custom-x="50" data-overlay-custom-y="100" )
+                img(src="img/test.jpg" style="display: block; margin: 0 auto; margin-top: 80px")
+            
+            button#toggle3 Show overlay with close button
+            .overlay(data-overlay-toggle="#toggle3" data-overlay-close="#close")
+                button#close Close
+                br
+                img(src="img/test.jpg" style="display: block; margin: 0 auto; margin-top: 80px")
+                    
+            button#toggle4 Show overlay with scrollable content
+            .overlay(data-overlay-toggle="#toggle4")       
+                div(style="margin: 10px; padding: 10px; background-color: #fff")
+                    p 1. Up. ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 9. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p 10. Down. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
+            button#toggle5 Show overlay with sidebar and temporary css class(trigger when toggle clicked)
+            .overlay(data-overlay-toggle="#toggle5" data-overlay-close="#close5" data-overlay-temporary="overlay_noscroll" data-overlay-temporary-duration="550")        
+                .sidebar
+                    button#close5 close
+                    br
+                    |sidebar
+                style.
+                    .sidebar{ float: right; width: 300px; height: 100vh; background-color: #fff; animation: sidebar-right .5s; }
+                    @keyframes sidebar-right {
+                        from { margin-right: -100%; }
+                        to   { margin-right: 0; }
+                    }
+                        
+            button.multiple Multiple selector. Button 1
+            button.multiple Multiple selector. Button 2
+            button#multiple-button Multiple selector. Button 3
+            .overlay(data-overlay-toggle='.multiple, #multiple-button', style='color: #fff') Several toggles for one overlay
+        
+        // Тестовый контент
+        .content   
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed Стипендия Фулбрайта: как и зачем?
+                .post__image
+                    img(src="https://habrastorage.org/webt/5h/th/ws/5hthwsh3t36os2svbsvzgf841d8.png" width="100%")
+                .post__text
+                    .text Здравствуйте, уважаемые хабровчане. Меня зовут Андрей, я химик из Киева, выигравший стипендию Фулбрайта FRDP. Сейчас я прохожу стажировку в штате Мичиган. В этой статье я хочу рассказать мой опыт подачи документов, собеседования и поездки.
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed Репутация, работа и эмиграция: как использовать инструменты продвижения компаний для решения личных задач
+                .post__image
+                    img(src="https://habrastorage.org/webt/kt/yy/tv/ktyytvsmqwup5gpxmbnilugqpg8.jpeg" width="100%")
+                .post__text
+                    .text Ведение блогов, создание контента, работа со СМИ – это то, чем занимаются всё больше компаний. Но на самом деле подобные инструменты продвижения могут использоваться не только бизнесом для привлечения клиента, но и обычными людьми для профессионального развития.
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed Личный опыт: Пять сложностей при запуске бизнеса в США
+                .post__image
+                    img(src="https://habrastorage.org/webt/a6/su/cz/a6suczgg1msc0tw7nxvuxw-nufg.jpeg" width="100%")
+                .post__text
+                    .text Вот уже пару лет я живу в США, развиваю два собственных проекта и сегодня решил поделиться опытом. Мне на глаза часто попадаются статьи с рассказами о том, как классно делать бизнес в США, авторы которых не рассказывают о возможных сложностях на этом пути. В итоге у многих может сложиться чересчур идеализированное представление о том, как они приедут в Кремниевую Долину со своим стартапом менять мир. 
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed Мой переезд в Норвегию
+                .post__image
+                    img(src="https://habrastorage.org/webt/cq/xf/ju/cqxfju7smkpuq7oa-ecwqodwxgo.jpeg" width="100%")
+                .post__text
+                    .text Я решил написать эту статью, потому что в интернете мало информации именно о переезде в Норвегию. Люди в основном описывают жизнь, процесс поиска работы и тому подобное. Ниже я постарался рассказать о подготовке документов, регистрации в стране, открытии банковского счёта, аренде квартиры и т.п. Надеюсь, это будет полезно.
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed IT в Германии — как искать работу в крупных городах Германии
+                .post__image
+                    img(src="https://habrastorage.org/webt/sf/ny/qp/sfnyqpx9u9iffdlp8hm5m7rhmw4.jpeg" width="100%")
+                .post__text
+                    .text Уехать в Германию при наличии опыта работы в IT довольно просто, и множество статей на эту тему помогают определиться с выбором. Эта статья не будет исключением, в ней собраны истории 5х эмигрантов, которые поделились своим опытом работы в крупных городах Германии и рассказали, что нужно делать, чтобы найти работу и успешно продвигаться по карьерной лестнице.
+            .post
+                .post__title
+                    .text.text_primary.text_medium.text_squeezed Переезд в австрийский социализм
+                .post__image
+                    img(src="https://voyage-luxe.ru/wp-content/uploads/2016/12/513.jpg" width="100%")
+                .post__text
+                    .text На Хабре часто пишут про эмиграцию в разные страны, а про Австрию ещё не было. Пора восполнить пробел. Я попробую описать мой опыт переезда в Австрию (в Вену), а также немного расскажу про особенности страны, которые я узнал за 6 лет проживания тут. 
+
+            
+        style.
+            body {
+                margin: 0;                
+            }
+            
+            div {
+                box-sizing: border-box;
+            }
+            
+            .content {
+                width: 900px;
+                min-height: calc(100vh - 90px);
+                margin: 90px auto 0 auto;
+                padding: 30px;
+                border-left: 1px solid #eaeaea;
+                border-right: 1px solid #eaeaea;
+            }
+            
+            .post {
+                font-size: 0;
+                line-height: 0;
+                border-bottom: 1px solid #eaeaea;
+            }
+            .post + .post {
+                margin-top: 30px;
+            }
+            
+            .post__title {
+                margin-bottom: 30px;
+            }
+            
+            .post__image {
+                margin-bottom: 30px;
+            }
+            
+            .post__text {
+                margin-bottom: 25px;
+            }
+            
+            .toggles {
+                position: fixed; 
+                top: 0;
+                left: 0;
+                height: 90px;                
+                background-color: #fff; 
+                padding: 20px;
+                border-bottom: 1px solid #eaeaea;
+            }
+                    
+        script(src="js/overlay.min.js")
+        script.
+            overlay();    
+            

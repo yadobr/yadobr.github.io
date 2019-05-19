@@ -1,0 +1,136 @@
+.form {
+    width: 500px;
+    padding: 30px;
+	border-radius: 2px;
+	background-color: #fff;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #222;
+}
+
+.form_centered {
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+}
+
+.form__section {
+	margin-bottom: 30px;
+}
+
+.form__section:last-child {
+	margin-bottom: 0;
+}
+
+
+.form__row {
+	margin-bottom: 20px;
+}
+
+.form__row_close {
+    display: none;
+}
+
+.form__row_login > .button  + .link {
+    margin-left: 17px;
+}
+
+.form__row_controls > .button + .button {
+    margin-left: 17px;
+}
+
+.form__row:last-child {
+	margin-bottom: 0;
+}
+
+
+.form__header {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 15px; /* Должна равняться реальной высоте заглавной буквы в писелях */
+}
+
+
+.form__title {
+	color: #747d84;
+    margin: -5px 0 -5px 0;
+}
+
+
+.form__hr {
+	width: 100%;
+	height: 1px;
+	background-color: #eaeaea;
+}
+
+
+.form__label {
+	font-weight: 500;
+    margin: -5px 0 -5px 0;
+}
+
+
+.form__label + .input,
+.form__label + .textarea,
+.form__label + .dropdown {
+	margin-top: 15px;
+}
+
+.form__image {
+    max-height: 800px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.form__image > img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.form__image_edit {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+
+.form__image_edit::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 7, 10, .8);
+}
+
+.form__file {
+    display: none;
+}
+
+/* MEDIA */
+@media (max-width: 500px) {
+	.form {
+		width: 100% !important;
+		min-height: 100%;
+		border-radius: 0;
+	}
+
+    .form_centered {
+        top: 0;
+        transform: none;
+    }
+
+    .form__row_close {
+        display: block;
+    }
+
+    .g-recaptcha {
+        transform: scale(.72);
+        transform-origin: 0 0;
+    }
+}
